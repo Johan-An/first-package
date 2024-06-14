@@ -2,9 +2,9 @@
     "name": "johanan/first-package",
     "description": "just for practise",
     "type": "library",
-    "version":"2.0.0",
+    "version":"3.0.0",
     "require": {
-        "php": "^8.2"
+        "php": "^8.1"
     },
     "autoload": {
         "psr-4": {
