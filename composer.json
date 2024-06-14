@@ -1,0 +1,23 @@
+{
+    "name": "johanan/first-package",
+    "description": "just for practise",
+    "type": "library",
+    "version":"1.0.0",
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Johanan\\FirstPackage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "johan",
+            "email": "2432915935@qq.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^11.2"
+    }
+}
