@@ -3,8 +3,17 @@
 namespace Johanan\FirstPackage;
 
 class Greeting {
+
+    /**
+     * greeting
+     */
     function say()
     {
-   	return "hello";
+        $hour = date('H');
+        if ($hour < 12) {
+            return "Good morning";
+        }
+
+   	    return "Good afternoon";
     }
 }
