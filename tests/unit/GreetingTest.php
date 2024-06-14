@@ -1,12 +1,18 @@
-<?php declare(strict_types=1);
+<?php
+
 use PHPUnit\Framework\TestCase;
 
 final class GreetingTest extends TestCase
 {
-    public function testGreeting(): void
+    public function testGreeting()
     {
-	$greeting = new Johanan\FirstPackage\Greeting();
-	
-        $this->assertEquals('hello', $greeting->say());
+	    $greeting = new Johanan\FirstPackage\Greeting();
+
+        $hour = date('H');
+        if ($hour < 12) {
+            $this->assertEquals('Good morning', $greeting->say());
+        } else {
+            $this->assertEquals('Good afternoon', $greeting->say());
+        }
     }
 }
